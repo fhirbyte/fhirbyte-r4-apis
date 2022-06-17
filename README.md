@@ -1,3 +1,14 @@
+# Release 1
+First release will be available for download on 18-Sep-2022
+It will have following 5 FHIR resources
+<ul> 
+  <li> Patient </li>
+  <li> Encounter </li>
+  <li> Condition </li>
+  <li> Practitioner </li>
+  <li> Organization </li>
+</ul>
+
 # Introduction
 <ol>
   <li> <a href="www.fhirbyte.com">FHIRByte</a> is the simplest and fastest application to Develop, Test, Deploy, Scale APIs for any Healthcare Business </li>
@@ -13,4 +24,4 @@ The best way to get stared quickly is to download the <a href="https://github.co
 # Trademark
 FHIR® is the registered trademark of HL7 and is used with the permission of HL7. Use of the FHIR trademark does not constitute endorsement of this product by HL7.
 # Contact Us
-support@fhirbyte.com
+
