@@ -25,6 +25,7 @@ Free Trial will have following 5 FHIR resources
       <li> Web Server Files like PHP,Python or Java JAR </li>
       <li> Postman APIs </li> </ul> </li>   
   <li> Import your test data in to the Sample Database or use the already available sample data </li> 
+  <li> Place the server files like .php or .jar in your Cloud or On-Premisis app server  </li>
   <li> Try your CRUD Operations like Add Patient, Get Patient, Edit Encounters etc using Postman apis </li>
 </ol>  
 
