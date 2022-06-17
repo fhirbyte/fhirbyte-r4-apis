@@ -35,3 +35,4 @@ Free Trial will have following 5 FHIR resources
 FHIR® is the registered trademark of <a href = 'https://www.hl7.org/' target='_blank'> HL7 </a> and is used with the permission of HL7. Use of the FHIR trademark does not constitute endorsement of this product by HL7.
 # Contact Us
 
+For Business Queries, please send an email to sales@fhirbyte.com
