@@ -4,7 +4,8 @@
   <li> The APIs are built in <a href = 'https://www.hl7.org/fhir/' target='_blank'> FHIR R4</a> JSON Format </li>
   <li> Supports both Cloud and On-Premisis Hosting </li>
   <li> Works on all top cloud providers such as Azure, AWS, Google Cloud, IBM Cloud etc</li>
-  <li> Supports 4 databases - MYSQL, Oracle, SQL Server and PostGres
+  <li> Supports 4 databases - MYSQL, Oracle, SQL Server and PostGres </li>
+  <li> Supports Data in all major languages like English, Mandarin , Spanish, Arabic, Russian etc </li>
 </ol>
 
 # Release 1
@@ -24,12 +25,13 @@ Free Trial will have following 5 FHIR resources
     <ul> <li> Sample Database </li>
       <li> Web Server Files like PHP,Python or Java JAR </li>
       <li> Postman APIs </li> </ul> </li>   
-  <li> Import your test data in to the Sample Database or use the already available sample data </li> 
+  <li> Import your test data in to the Sample Database (or) Use the already available sample data in your Cloud or On-Premisis DB server</li> 
   <li> Place the server files like .php or .jar in your Cloud or On-Premisis app server  </li>
-  <li> Try your CRUD Operations like Add Patient, Get Patient, Edit Encounters etc using Postman apis </li>
+  <li> Edit the connection strings for DB and App </li>
+  <li> Try your <a href = 'https://en.wikipedia.org/wiki/Create,_read,_update_and_delete' target='_blank'> CRUD </a> Operations like Add Patient, Get Patient, Edit Encounters etc using <a href = 'https://www.postman.com/' target='_blank'> Postman </a>  apis </li>
 </ol>  
 
 # Trademark
-FHIR® is the registered trademark of HL7 and is used with the permission of HL7. Use of the FHIR trademark does not constitute endorsement of this product by HL7.
+FHIR® is the registered trademark of <a href = 'https://www.hl7.org/' target='_blank'> HL7 </a> and is used with the permission of HL7. Use of the FHIR trademark does not constitute endorsement of this product by HL7.
 # Contact Us
 
