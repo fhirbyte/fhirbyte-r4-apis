@@ -11,7 +11,7 @@
 
 # Release 1
 First release will be available for download on <b>18-Sep-2022</b> <br>
-Free Trial will have following 5 FHIR resources
+It will have following 5 FHIR resources
 <ul> 
   <li> <a href = 'https://build.fhir.org/patient.html' target='_blank'> Patient </a> </li>
   <li> <a href = 'https://build.fhir.org/encounter.html' target='_blank'> Encounter  </a> </li>
@@ -23,10 +23,10 @@ Free Trial will have following 5 FHIR resources
 # How Does it work?
 <ol>
   <li> Download the 3 components
-    <ul> <li> Sample Database </li>
+    <ul> <li> FHIR RDBMS Database SQL files </li>
       <li> Web Server Files like PHP,Python or Java JAR </li>
       <li> Postman APIs </li> </ul> </li>   
-  <li> Import your test data in to the Sample Database (or) Use the already available sample data in your Cloud or On-Premisis DB server</li> 
+  <li> Import your test data in to the FHIR RDBMS Database (or) Use the already available sample data in your Cloud or On-Premisis DB server</li> 
   <li> Place the server files like .php or .jar in your Cloud or On-Premisis app server  </li>
   <li> Edit the connection strings for DB and App </li>
   <li> Try your <a href = 'https://en.wikipedia.org/wiki/Create,_read,_update_and_delete' target='_blank'> CRUD </a> Operations like Add Patient, Get Patient, Edit Encounters etc using <a href = 'https://www.postman.com/' target='_blank'> Postman </a>  apis </li>
