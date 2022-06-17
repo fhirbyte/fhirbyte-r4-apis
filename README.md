@@ -6,6 +6,7 @@
   <li> Works on all top cloud providers such as Azure, AWS, Google Cloud, IBM Cloud etc</li>
   <li> Supports 4 databases - MYSQL, Oracle, SQL Server and PostGres </li>
   <li> Supports Data in all major languages like English, Mandarin , Spanish, Arabic, Russian etc </li>
+  <li> For Business Queries, please send an email to sales@fhirbyte.com </li>
 </ol>
 
 # Release 1
