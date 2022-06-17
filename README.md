@@ -8,7 +8,7 @@
 </ol>
 
 # Getting Started
-The best way to get stared quickly is to download the free trial repo from github
+The best way to get stared quickly is to download the <a href="https://github.com/fhirbyte/fhirbyte-free-trial">Free Trial Repository</a> from github
 
 # Trademark
 FHIR® is the registered trademark of HL7 and is used with the permission of HL7. Use of the FHIR trademark does not constitute endorsement of this product by HL7.
