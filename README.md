@@ -1,7 +1,7 @@
 # Introduction
 <ol>
   <li> <b>FHIRByte</b> is the simplest and fastest application to Develop, Test, Deploy, Scale APIs for any Healthcare Business </li>
-  <li> The APIs are built in R4 FHIR JSON Format </li>
+  <li> The APIs are built in <a href = 'https://www.hl7.org/fhir/' target='_blank'> FHIR R4</a> JSON Format </li>
   <li> Supports both Cloud and On-Premisis Hosting </li>
   <li> Works on all top cloud providers such as Azure, AWS, Google Cloud, IBM Cloud etc</li>
   <li> Supports 4 databases - MYSQL, Oracle, SQL Server and PostGres
@@ -11,11 +11,11 @@
 First release will be available for download on <b>18-Sep-2022</b> <br>
 Free Trial will have following 5 FHIR resources
 <ul> 
-  <li> Patient </li>
-  <li> Encounter </li>
-  <li> Condition </li>
-  <li> Practitioner </li>
-  <li> Organization </li>
+  <li> <a href = 'https://build.fhir.org/patient.html' target='_blank'> Patient </a> </li>
+  <li> <a href = 'https://build.fhir.org/encounter.html' target='_blank'> Encounter  </a> </li>
+  <li> <a href = 'https://build.fhir.org/condition.html' target='_blank'> Condition  </a> </li>
+  <li> <a href = 'https://build.fhir.org/practitioner.html' target='_blank'> Practitioner  </a> </li>
+  <li> <a href = 'https://build.fhir.org/organization.html' target='_blank'> Organization  </a> </li>
 </ul>
 
 # How Does it work?
