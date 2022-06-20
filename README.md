@@ -10,13 +10,17 @@
 </ol>
 
 # Release 1
-First release will be available for download on <b>18-Sep-2022</b> <br>
-It will have following 5 FHIR resources
+First release will be available for download on <b>15-Jul-2022</b> <br>
+The release will have following 2 components
+<ol> 
+  <li> MySQL + PHP + Postman APIs </li>
+  <li> PostGres + PHP + Postman APIs </li>
+ </ol>
+ <br>
+Both Components will have following 3 FHIR resources  <br>
 <ul> 
   <li> <a href = 'https://build.fhir.org/patient.html' target='_blank'> Patient </a> </li>
   <li> <a href = 'https://build.fhir.org/encounter.html' target='_blank'> Encounter  </a> </li>
-  <li> <a href = 'https://build.fhir.org/condition.html' target='_blank'> Condition  </a> </li>
-  <li> <a href = 'https://build.fhir.org/practitioner.html' target='_blank'> Practitioner  </a> </li>
   <li> <a href = 'https://build.fhir.org/organization.html' target='_blank'> Organization  </a> </li>
 </ul>
 
