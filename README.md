@@ -23,16 +23,31 @@ It supports 1 FHIR resource  <br>
   <li> <a href = 'https://build.fhir.org/patient.html' target='_blank'> Patient </a> </li>  
 </ul>
 
+<h3> Steps to Test </h3>
+<ol> 
+  <li> Download WAMP Server from https://www.wampserver.com/en/ </li> 
+  <li> Once Wamp is installed, create a folder called <b>fhirbyte</b> in www folder and place your <b>php_apis_r4</b>  folder</li> 
+  <li> Download Postman Client from https://www.postman.com/  </li> 
+  <li> Import <b>FhirByte R4 apis.postman_collection.json</b> into your Postman Client </li> 
+  <li> Start the Wamp server and goto phpMyAdmin and create a database called <b>fhirbyte</b> </li> 
+  <li> Import <b>fhirbyte.sql</b> into phpMyAdmin </li>
+  <li> Edit connection.php if needed </li>
+  <li> Open Postman client and test the 2 apis ie <b>Get All Patients and Get Patient by ID</b> </li>  
+</ol> 
+  
 # Upcoming Releases
 
-We will keep you posted on other FHIR Resources
-<ul> 
-  <li> <a href = 'https://build.fhir.org/patient.html' target='_blank'> Patient </a> </li>  
-   <li> <a href = 'https://build.fhir.org/encounter.html' target='_blank'> Encounter </a> </li>  
-   <li> <a href = 'https://build.fhir.org/organization.html' target='_blank'> Organization </a> </li>  
-   <li> <a href = 'https://build.fhir.org/practitioner.html' target='_blank'> Practitioner </a> </li>  
-   <li> <a href = 'https://build.fhir.org/practitionerrole.html' target='_blank'> PractitionerRole </a> </li>  
-</ul>
+We have lot of interesting things coming up like 
+
+<ol> 
+  <li> PostGres+PHP+Postman </li> 
+  <li> PostGres+Java+Postman </li> 
+  <li> New FHIR resources like <a href = 'https://build.fhir.org/encounter.html' target='_blank'> Encounter </a>,
+    <a href = 'https://build.fhir.org/organization.html' target='_blank'> Organization </a>, 
+    <a href = 'https://build.fhir.org/practitioner.html' target='_blank'> Practitioner </a> etc</li> 
+  <li> much more </li> 
+</ol> 
+
 Please clone the repo for immediate updates upon releases
 
 # How Does it work?
