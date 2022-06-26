@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "67f8b6a8-de77-4bfd-8dc8-bb8ce1cbf657",
+		"name": "FhirByte R4 apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Patients",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "authorization_key",
+							"value": "hcytgplrqi565qcwkutl2jogz",
+							"description": "Security Key",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/fhirbyte/php_apis_r4/json_get_all_patients_r4.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fhirbyte",
+						"php_apis_r4",
+						"json_get_all_patients_r4.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Patient by ID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "authorization_key",
+							"value": "hcytgplrqi565qcwkutl2jogz",
+							"description": "Security Key",
+							"type": "default"
+						},
+						{
+							"key": "patient_id",
+							"value": "2000",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/fhirbyte/php_apis_r4/json_get_patient_by_id_r4.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fhirbyte",
+						"php_apis_r4",
+						"json_get_patient_by_id_r4.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

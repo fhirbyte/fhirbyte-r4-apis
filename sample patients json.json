@@ -1,0 +1,344 @@
+{
+    "resourceType": "Patient",
+    "active": "true",
+    "gender": "male",
+    "birthDate": "1971-06-28",
+    "deceasedBoolean": "false",
+    "deceasedDateTime": "",
+    "multipleBirthBoolean": "",
+    "multipleBirthInteger": "2",
+    "identifier": [
+        {
+            "use": "official",
+            "system": "http://mrn.com",
+            "value": "S001"
+        },
+        {
+            "use": "official",
+            "system": "http://mrn.com",
+            "value": "N001"
+        }
+    ],
+    "name": [
+        {
+            "use": "official",
+            "text": "Elon Musk",
+            "family": "Musk",
+            "given": [
+                "Elon",
+                "Musk"
+            ],
+            "prefix": [
+                "Mr."
+            ],
+            "suffix": [
+                "PhD"
+            ]
+        },
+        {
+            "use": "usual",
+            "text": "Elon Musk",
+            "family": "Musk",
+            "given": [
+                "عبد",
+                "فتة"
+            ],
+            "prefix": [],
+            "suffix": []
+        },
+        {
+            "use": "nickname",
+            "text": "Elon Musk",
+            "family": "Musk",
+            "given": [],
+            "prefix": [],
+            "suffix": []
+        }
+    ],
+    "telecom": [
+        {
+            "use": "home",
+            "system": "phone",
+            "value": "999-999-9999"
+        },
+        {
+            "use": "work",
+            "system": "email",
+            "value": "elon@gmail.com"
+        }
+    ],
+    "maritalStatus": {
+        "text": "Married",
+        "coding": [
+            {
+                "code": "M",
+                "display": "Married",
+                "system": "https://terminology.hl7.org/"
+            }
+        ]
+    },
+    "address": [
+        {
+            "use": "home",
+            "type": "physical",
+            "text": "3500 Deer Creek Road, Palo Alto",
+            "city": "San Francisco",
+            "district": "Santa Clara",
+            "state": "CA",
+            "postalcode": "94304",
+            "country": "USA",
+            "line": [
+                "3500 Deer Creek Road",
+                "Palo Alto, CA 94304 United States"
+            ]
+        }
+    ],
+    "communication": [
+        {
+            "preferred": "true",
+            "language": {
+                "coding": [
+                    {
+                        "code": "en-US",
+                        "display": "English (United States)",
+                        "system": "https://terminology.hl7.org/"
+                    },
+                    {
+                        "text": "English (United States)"
+                    }
+                ]
+            }
+        }
+    ]
+}{
+    "resourceType": "Patient",
+    "active": "true",
+    "gender": "male",
+    "birthDate": "1967-10-11",
+    "deceasedBoolean": "false",
+    "deceasedDateTime": "",
+    "multipleBirthBoolean": "",
+    "multipleBirthInteger": "",
+    "identifier": [],
+    "name": [
+        {
+            "use": "official",
+            "text": "Peter Andreas Thiel",
+            "family": "Thiel",
+            "given": [
+                "Peter",
+                "Andreas",
+                "Theil"
+            ],
+            "prefix": [
+                "Mr."
+            ],
+            "suffix": [
+                "PhD"
+            ]
+        }
+    ],
+    "telecom": [
+        {
+            "use": "home",
+            "system": "phone",
+            "value": "888-888-8888"
+        },
+        {
+            "use": "work",
+            "system": "email",
+            "value": "peter@gmail.com"
+        }
+    ],
+    "maritalStatus": {
+        "text": "Married",
+        "coding": [
+            {
+                "code": "M",
+                "display": "Married",
+                "system": "https://terminology.hl7.org/"
+            }
+        ]
+    },
+    "address": [
+        {
+            "use": "home",
+            "type": "physical",
+            "text": "1 Letterman C #420 Presidio, Dr Bldg",
+            "city": "San Francisco",
+            "district": "Santa Clara",
+            "state": "CA",
+            "postalcode": "94129",
+            "country": "USA",
+            "line": [
+                "1 Letterman C #420 Presidio",
+                "Dr Bldg, San Francisco",
+                "California 94129, US"
+            ]
+        }
+    ],
+    "communication": [
+        {
+            "preferred": "true",
+            "language": {
+                "coding": [
+                    {
+                        "code": "en-US",
+                        "display": "English (United States)",
+                        "system": "https://terminology.hl7.org/"
+                    },
+                    {
+                        "text": "English (United States)"
+                    }
+                ]
+            }
+        }
+    ]
+}{
+    "resourceType": "Patient",
+    "active": "true",
+    "gender": "female",
+    "birthDate": "1982-05-11",
+    "deceasedBoolean": "false",
+    "deceasedDateTime": "",
+    "multipleBirthBoolean": "",
+    "multipleBirthInteger": "",
+    "identifier": [],
+    "name": [
+        {
+            "use": "official",
+            "text": "عبد الفتاح",
+            "family": "الفتاح",
+            "given": [],
+            "prefix": [],
+            "suffix": []
+        }
+    ],
+    "telecom": [],
+    "maritalStatus": {
+        "text": "Married",
+        "coding": [
+            {
+                "code": "M",
+                "display": "Married",
+                "system": "https://terminology.hl7.org/"
+            }
+        ]
+    },
+    "address": [],
+    "communication": [
+        {
+            "preferred": "true",
+            "language": {
+                "coding": [
+                    {
+                        "code": "ar",
+                        "display": "Arabic",
+                        "system": "https://terminology.hl7.org/"
+                    },
+                    {
+                        "text": "Arabic"
+                    }
+                ]
+            }
+        }
+    ]
+}{
+    "resourceType": "Patient",
+    "active": "true",
+    "gender": "female",
+    "birthDate": "1990-02-06",
+    "deceasedBoolean": "false",
+    "deceasedDateTime": "",
+    "multipleBirthBoolean": "",
+    "multipleBirthInteger": "",
+    "identifier": [],
+    "name": [
+        {
+            "use": "official",
+            "text": "马云",
+            "family": "云",
+            "given": [],
+            "prefix": [],
+            "suffix": []
+        }
+    ],
+    "telecom": [],
+    "maritalStatus": {
+        "text": "Married",
+        "coding": [
+            {
+                "code": "M",
+                "display": "Married",
+                "system": "https://terminology.hl7.org/"
+            }
+        ]
+    },
+    "address": [],
+    "communication": [
+        {
+            "preferred": "true",
+            "language": {
+                "coding": [
+                    {
+                        "code": "zh",
+                        "display": "Chinese",
+                        "system": "https://terminology.hl7.org/"
+                    },
+                    {
+                        "text": "Chinese"
+                    }
+                ]
+            }
+        }
+    ]
+}{
+    "resourceType": "Patient",
+    "active": "true",
+    "gender": "male",
+    "birthDate": "2000-08-03",
+    "deceasedBoolean": "false",
+    "deceasedDateTime": "",
+    "multipleBirthBoolean": "",
+    "multipleBirthInteger": "",
+    "identifier": [],
+    "name": [
+        {
+            "use": "official",
+            "text": "Деннис Литтл",
+            "family": "Литтл",
+            "given": [],
+            "prefix": [],
+            "suffix": []
+        }
+    ],
+    "telecom": [],
+    "maritalStatus": {
+        "text": "Married",
+        "coding": [
+            {
+                "code": "M",
+                "display": "Married",
+                "system": "https://terminology.hl7.org/"
+            }
+        ]
+    },
+    "address": [],
+    "communication": [
+        {
+            "preferred": "true",
+            "language": {
+                "coding": [
+                    {
+                        "code": "ru",
+                        "display": "Russian",
+                        "system": "https://terminology.hl7.org/"
+                    },
+                    {
+                        "text": "Russian"
+                    }
+                ]
+            }
+        }
+    ]
+}
