@@ -33,7 +33,7 @@ We will keep you posted on other FHIR Resources
    <li> <a href = 'https://build.fhir.org/practitioner.html' target='_blank'> Practitioner </a> </li>  
    <li> <a href = 'https://build.fhir.org/practitionerrole.html' target='_blank'> PractitionerRole </a> </li>  
 </ul>
-Please fork the repo for immediate updates upon releases
+Please clone the repo for immediate updates upon releases
 
 # How Does it work?
 <ol>
