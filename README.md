@@ -9,19 +9,15 @@
   <li> For Business Queries, please send an email to <b>sales@fhirbyte.com </b></li>
 </ol>
 
-# Release 1
-First release will be available for download on <b>15-Jul-2022</b> <br>
-The release will have following 2 components
+# Current Release
+First release was done on <b>26-Jun-2022</b> <br>
+The release is having following 3 components
 <ol> 
-  <li> MySQL + PHP + Postman APIs </li>
-  <li> PostGres + PHP + Postman APIs </li>
- </ol>
- <br>
-Both Components will have following 3 FHIR resources  <br>
+  <li> MySQL + PHP api + Postman APIs collection</li> 
+ </ol> 
+It supports 1 FHIR resource  <br>
 <ul> 
-  <li> <a href = 'https://build.fhir.org/patient.html' target='_blank'> Patient </a> </li>
-  <li> <a href = 'https://build.fhir.org/encounter.html' target='_blank'> Encounter  </a> </li>
-  <li> <a href = 'https://build.fhir.org/organization.html' target='_blank'> Organization  </a> </li>
+  <li> <a href = 'https://build.fhir.org/patient.html' target='_blank'> Patient </a> </li>  
 </ul>
 
 # How Does it work?
