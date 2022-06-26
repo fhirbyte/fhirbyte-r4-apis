@@ -23,6 +23,18 @@ It supports 1 FHIR resource  <br>
   <li> <a href = 'https://build.fhir.org/patient.html' target='_blank'> Patient </a> </li>  
 </ul>
 
+# Upcoming Releases
+
+We will keep you posted on other FHIR Resources
+<ul> 
+  <li> <a href = 'https://build.fhir.org/patient.html' target='_blank'> Patient </a> </li>  
+   <li> <a href = 'https://build.fhir.org/encounter.html' target='_blank'> Encounter </a> </li>  
+   <li> <a href = 'https://build.fhir.org/organization.html' target='_blank'> Organization </a> </li>  
+   <li> <a href = 'https://build.fhir.org/practitioner.html' target='_blank'> Practitioner </a> </li>  
+   <li> <a href = 'https://build.fhir.org/practitionerrole.html' target='_blank'> PractitionerRole </a> </li>  
+</ul>
+Please fork the repo for immediate updates upon releases
+
 # How Does it work?
 <ol>
   <li> Download the 3 components
