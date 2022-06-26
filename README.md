@@ -9,12 +9,15 @@
   <li> For Business Queries, please send an email to <b>sales@fhirbyte.com </b></li>
 </ol>
 
-# Current Release
+# Initial Release
 First release was done on <b>26-Jun-2022</b> <br>
 The release is having following 3 components
 <ol> 
-  <li> MySQL + PHP api + Postman APIs collection</li> 
- </ol> 
+  <li> <b>MySQL:</b> fhirbyte.sql </li> 
+  <li> <b>PHP api script:</b>  Folder php_apis_r4 </li> 
+  <li> <b>Postman APIs collection:</b> FhirByte R4 apis.postman_collection.json  </li> 
+</ol> 
+ 
 It supports 1 FHIR resource  <br>
 <ul> 
   <li> <a href = 'https://build.fhir.org/patient.html' target='_blank'> Patient </a> </li>  
