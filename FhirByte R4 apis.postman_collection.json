@@ -28,7 +28,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/json_get_session_user_details_r4.php",
+							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/session/getSessionUserDetails.php",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -37,7 +37,8 @@
 							"path": [
 								"fhirbyte",
 								"php_apis_r4",
-								"json_get_session_user_details_r4.php"
+								"session",
+								"getSessionUserDetails.php"
 							]
 						}
 					},
@@ -80,7 +81,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/json_get_all_patients_r4.php",
+							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/patient/getAllPatients.php",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -89,7 +90,8 @@
 							"path": [
 								"fhirbyte",
 								"php_apis_r4",
-								"json_get_all_patients_r4.php"
+								"patient",
+								"getAllPatients.php"
 							]
 						}
 					},
@@ -126,7 +128,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/json_get_patient_by_id_r4.php",
+							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/patient/getPatientByID.php",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -135,7 +137,8 @@
 							"path": [
 								"fhirbyte",
 								"php_apis_r4",
-								"json_get_patient_by_id_r4.php"
+								"patient",
+								"getPatientByID.php"
 							]
 						}
 					},
@@ -179,7 +182,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/json_delete_patients_r4.php",
+							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/patient/deletePatient.php",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -188,7 +191,8 @@
 							"path": [
 								"fhirbyte",
 								"php_apis_r4",
-								"json_delete_patients_r4.php"
+								"patient",
+								"deletePatient.php"
 							]
 						}
 					},
@@ -232,7 +236,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/json_activate_patients_r4.php",
+							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/patient/activatePatient.php",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -241,7 +245,8 @@
 							"path": [
 								"fhirbyte",
 								"php_apis_r4",
-								"json_activate_patients_r4.php"
+								"patient",
+								"activatePatient.php"
 							]
 						}
 					},
