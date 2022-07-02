@@ -39,11 +39,12 @@ Please clone the repo for immediate updates upon releases
 
 # How Does it work?
 <ol> 
-  <li> Download WAMP Server from https://www.wampserver.com/en/ </li> 
-  <li> Once Wamp is installed, create a folder called <b>fhirbyte</b> in www folder and place your <b>php_apis_r4</b>  folder</li> 
+  <li> Download and Install WAMP Server from https://www.wampserver.com/en/ </li> 
+  <li> Alternatively, You can use any App Servers from the cloud providers such as Azure, AWS, Google Cloud etc </li>
+  <li> Create a folder called <b>fhirbyte</b> in www folder and place your <b>php_apis_r4</b>  folder</li> 
   <li> Download Postman Client from https://www.postman.com/  </li> 
   <li> Import <b>FhirByte R4 apis.postman_collection.json</b> into your Postman Client </li> 
-  <li> Start the Wamp server and goto phpMyAdmin and create a database called <b>fhirbyte</b> </li> 
+  <li> Goto phpMyAdmin in MYSQL and create a database called <b>fhirbyte</b> </li> 
   <li> Import <b>fhirbyte.sql</b> into phpMyAdmin </li>
   <li> Edit connection.php if needed </li>
   <li> Open Postman client and test the apis such as <b>Get All Patients, Get Patient by ID etc</b> </li>  
