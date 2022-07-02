@@ -8,8 +8,8 @@ $db->query("SET collation_connection = utf8_general_ci;");
 
 /* Validate User */
 
-$authorization_key = mysqli_real_escape_string($db,trim($_POST['authorization_key'])); 
-$patient_id = mysqli_real_escape_string($db,trim($_POST['patient_id']));
+$authorization_key = $_POST['authorization_key']; 
+$patient_id = $_POST['patient_id'];
 
 $valid_user = FALSE;
 

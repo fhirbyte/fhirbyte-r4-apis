@@ -8,7 +8,9 @@ $db->query("SET collation_connection = utf8_general_ci;");
 
 /* Validate User */
 
-$authorization_key = mysqli_real_escape_string($db,trim($_POST['authorization_key'])); 
+$authorization_key = $_POST['authorization_key']; 
+$active_inactive_filter = $_POST['active_inactive_filter'];
+
 $valid_user = FALSE;
 
 $validate_sql = "select * from user where authorization_key = '$authorization_key'";
@@ -21,7 +23,21 @@ while($row = mysqli_fetch_array($validate_query, MYSQLI_ASSOC)){
 
 if($valid_user) {
 
-$sql = "select * from patient p";
+switch ($active_inactive_filter) {
+  case "BOTH":
+    $sql = "select * from patient p";
+    break;
+  case "ACTIVE":
+    $sql = "select * from patient p where p.active_flag = 1";
+    break;
+  case "INACTIVE":
+    $sql = "select * from patient p where p.active_flag = 0";
+    break;    
+  default:
+     $sql = "select * from patient p";
+}
+
+
 $query = mysqli_query($db, $sql);
 $numb_rows = mysqli_num_rows($query);
 

@@ -6,79 +6,248 @@
 	},
 	"item": [
 		{
-			"name": "Get All Patients",
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "authorization_key",
-							"value": "hcytgplrqi565qcwkutl2jogz",
-							"description": "Security Key",
-							"type": "default"
+			"name": "Session",
+			"item": [
+				{
+					"name": "Get Session User Details",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "authorization_key",
+									"value": "hcytgplrqi565qcwkutl2jogz",
+									"description": "Security Key",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/json_get_session_user_details_r4.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fhirbyte",
+								"php_apis_r4",
+								"json_get_session_user_details_r4.php"
+							]
 						}
-					]
-				},
-				"url": {
-					"raw": "http://localhost:8080/fhirbyte/php_apis_r4/json_get_all_patients_r4.php",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"fhirbyte",
-						"php_apis_r4",
-						"json_get_all_patients_r4.php"
-					]
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Get Patient by ID",
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "authorization_key",
-							"value": "hcytgplrqi565qcwkutl2jogz",
-							"description": "Security Key",
-							"type": "default"
+			"name": "Patient",
+			"item": [
+				{
+					"name": "Get All Patients",
+					"request": {
+						"auth": {
+							"type": "noauth"
 						},
-						{
-							"key": "patient_id",
-							"value": "2000",
-							"type": "default"
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "authorization_key",
+									"value": "hcytgplrqi565qcwkutl2jogz",
+									"description": "Security Key",
+									"type": "default"
+								},
+								{
+									"key": "session_user_id",
+									"value": "1000",
+									"description": "Session User ID",
+									"type": "default"
+								},
+								{
+									"key": "active_inactive_filter",
+									"value": "BOTH",
+									"description": "1) BOTH 2)ACTIVE 3) INACTIVE",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/json_get_all_patients_r4.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fhirbyte",
+								"php_apis_r4",
+								"json_get_all_patients_r4.php"
+							]
 						}
-					]
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:8080/fhirbyte/php_apis_r4/json_get_patient_by_id_r4.php",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"fhirbyte",
-						"php_apis_r4",
-						"json_get_patient_by_id_r4.php"
-					]
+				{
+					"name": "Get Patient By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "authorization_key",
+									"value": "hcytgplrqi565qcwkutl2jogz",
+									"description": "Security Key",
+									"type": "text"
+								},
+								{
+									"key": "session_user_id",
+									"value": "1000",
+									"description": "Session User ID",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "2000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/json_get_patient_by_id_r4.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fhirbyte",
+								"php_apis_r4",
+								"json_get_patient_by_id_r4.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Patients By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "authorization_key",
+									"value": "hcytgplrqi565qcwkutl2jogz",
+									"description": "Security Key",
+									"type": "text"
+								},
+								{
+									"key": "session_user_id",
+									"value": "1000",
+									"description": "Session User ID",
+									"type": "text"
+								},
+								{
+									"key": "patient_id[0]",
+									"value": "2003",
+									"description": "Patient ID 1",
+									"type": "text"
+								},
+								{
+									"key": "patient_id[1]",
+									"value": "2004",
+									"description": "Patient ID 2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/json_delete_patients_r4.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fhirbyte",
+								"php_apis_r4",
+								"json_delete_patients_r4.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activate Patients By ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "authorization_key",
+									"value": "aklas9by312nd031ncls32dki",
+									"description": "Security Key",
+									"type": "text"
+								},
+								{
+									"key": "session_user_id",
+									"value": "1001",
+									"description": "Session User ID",
+									"type": "text"
+								},
+								{
+									"key": "patient_id[0]",
+									"value": "2000",
+									"description": "Patient ID 1",
+									"type": "text"
+								},
+								{
+									"key": "patient_id[1]",
+									"value": "2001",
+									"description": "Patient ID 2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/json_activate_patients_r4.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fhirbyte",
+								"php_apis_r4",
+								"json_activate_patients_r4.php"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }

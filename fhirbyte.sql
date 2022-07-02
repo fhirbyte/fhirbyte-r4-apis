@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jun 26, 2022 at 04:49 AM
+-- Generation Time: Jul 02, 2022 at 03:42 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.18
 
@@ -597,11 +597,11 @@ CREATE TABLE IF NOT EXISTS `patient` (
 --
 
 INSERT INTO `patient` (`patient_id`, `active_flag`, `create_dtm`, `create_user_id`, `active`, `gender`, `birth_date`, `deceased_boolean`, `deceased_date_time`, `multiple_birth_boolean`, `multiple_birth_integer`, `updt_dtm`, `updt_user_id`, `updt_cnt`) VALUES
-(2000, 1, '2022-06-24 00:00:00', 1000, 'true', 'male', '1971-06-28', 'false', NULL, NULL, 2, '2022-06-24 00:00:00', 1000, 1),
-(2001, 1, '2022-06-24 00:00:00', 1000, 'true', 'male', '1967-10-11', 'false', NULL, NULL, NULL, '2022-06-24 00:00:00', 1000, 1),
+(2000, 1, '2022-06-24 00:00:00', 1000, 'true', 'male', '1971-06-28', 'false', NULL, NULL, 2, '2022-07-01 23:42:31', 1001, 9),
+(2001, 1, '2022-06-24 00:00:00', 1000, 'true', 'male', '1967-10-11', 'false', NULL, NULL, NULL, '2022-07-01 23:42:31', 1001, 9),
 (2002, 1, '2022-06-24 00:00:00', 1000, 'true', 'female', '1982-05-11', 'false', NULL, NULL, NULL, '2022-06-24 00:00:00', 1000, 1),
-(2003, 1, '2022-06-24 00:00:00', 1000, 'true', 'female', '1990-02-06', 'false', NULL, NULL, NULL, '2022-06-24 00:00:00', 1000, 1),
-(2004, 1, '2022-06-24 00:00:00', 1000, 'true', 'male', '2000-08-03', 'false', NULL, NULL, NULL, '2022-06-24 00:00:00', 1000, 1);
+(2003, 0, '2022-06-24 00:00:00', 1000, 'false', 'female', '1990-02-06', 'false', NULL, NULL, NULL, '2022-07-01 23:41:49', 1000, 5),
+(2004, 0, '2022-06-24 00:00:00', 1000, 'false', 'male', '2000-08-03', 'false', NULL, NULL, NULL, '2022-07-01 23:41:49', 1000, 5);
 
 -- --------------------------------------------------------
 
@@ -698,21 +698,20 @@ CREATE TABLE IF NOT EXISTS `user` (
   `create_dtm` datetime DEFAULT NULL,
   `create_user_id` int(11) DEFAULT NULL,
   `full_name` varchar(250) DEFAULT NULL,
-  `login_username` varchar(100) DEFAULT NULL,
-  `login_password` varchar(100) DEFAULT NULL,
   `authorization_key` varchar(25) NOT NULL,
   `updt_dtm` datetime DEFAULT NULL,
   `updt_user_id` int(11) DEFAULT NULL,
   `updt_cnt` int(11) DEFAULT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=1002 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `active_flag`, `create_dtm`, `create_user_id`, `full_name`, `login_username`, `login_password`, `authorization_key`, `updt_dtm`, `updt_user_id`, `updt_cnt`) VALUES
-(1000, 1, '2022-06-22 00:00:00', 1000, 'Admin User', 'admin', 'password123', 'hcytgplrqi565qcwkutl2jogz', '2022-06-22 00:00:00', 1000, 1);
+INSERT INTO `user` (`user_id`, `active_flag`, `create_dtm`, `create_user_id`, `full_name`, `authorization_key`, `updt_dtm`, `updt_user_id`, `updt_cnt`) VALUES
+(1000, 1, '2022-06-22 00:00:00', 1000, 'Admin User', 'hcytgplrqi565qcwkutl2jogz', '2022-06-22 00:00:00', 1000, 1),
+(1001, 1, '2022-06-22 00:00:00', 1000, 'Developer User', 'aklas9by312nd031ncls32dki', '2022-06-22 00:00:00', 1000, 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
