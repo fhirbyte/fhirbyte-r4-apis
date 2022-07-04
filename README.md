@@ -19,9 +19,10 @@ The Initial release is having following 3 components
   <li> <b>Postman APIs collection:</b> FhirByte R4 apis.postman_collection.json  </li> 
 </ol> 
  
-It supports 1 FHIR resource  <br>
+It supports 2 FHIR resources  <br>
 <ul> 
   <li> <a href = 'https://build.fhir.org/patient.html' target='_blank'> Patient </a> </li>  
+  <li> <a href = 'https://build.fhir.org/organization.html' target='_blank'> Organization </a> </li> 
 </ul>
 
 # Upcoming Releases
@@ -31,8 +32,7 @@ We have lot of interesting things coming up like
 <ol> 
   <li> PostGres+PHP+Postman </li> 
   <li> PostGres+Java+Postman </li> 
-  <li> New FHIR resources like <a href = 'https://build.fhir.org/encounter.html' target='_blank'> Encounter </a>,
-    <a href = 'https://build.fhir.org/organization.html' target='_blank'> Organization </a>, 
+  <li> New FHIR resources like <a href = 'https://build.fhir.org/encounter.html' target='_blank'> Encounter </a>,    
     <a href = 'https://build.fhir.org/practitioner.html' target='_blank'> Practitioner </a> etc</li> 
   <li> much more </li> 
 </ol> 
