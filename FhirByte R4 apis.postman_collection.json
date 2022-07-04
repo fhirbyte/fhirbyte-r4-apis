@@ -253,6 +253,59 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Organization",
+			"item": [
+				{
+					"name": "Get All Organizations",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "authorization_key",
+									"value": "hcytgplrqi565qcwkutl2jogz",
+									"description": "Security Key",
+									"type": "default"
+								},
+								{
+									"key": "session_user_id",
+									"value": "1000",
+									"description": "Session User ID",
+									"type": "default"
+								},
+								{
+									"key": "active_inactive_filter",
+									"value": "BOTH",
+									"description": "1) BOTH 2)ACTIVE 3) INACTIVE",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/organization/getAllOrganizations.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fhirbyte",
+								"php_apis_r4",
+								"organization",
+								"getAllOrganizations.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

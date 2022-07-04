@@ -81,14 +81,14 @@
         {
             "use": "home",
             "type": "physical",
-            "text": "3500 Deer Creek Road, Palo Alto",
+            "text": "1000 Deer Creek Road, Palo Alto",
             "city": "San Francisco",
             "district": "Santa Clara",
             "state": "CA",
             "postalcode": "94304",
             "country": "USA",
             "line": [
-                "3500 Deer Creek Road",
+                "1000 Deer Creek Road",
                 "Palo Alto, CA 94304 United States"
             ]
         }
@@ -109,7 +109,13 @@
                 ]
             }
         }
-    ]
+    ],
+    "managingOrganization": {
+        "reference": "Organization/12000",
+        "type": "Organization",
+        "identifier": "SHS",
+        "display": "South Hospital"
+    }
 }{
     "resourceType": "Patient",
     "active": "true",
@@ -193,7 +199,13 @@
                 ]
             }
         }
-    ]
+    ],
+    "managingOrganization": {
+        "reference": "Organization/12000",
+        "type": "Organization",
+        "identifier": "SHS",
+        "display": "South Hospital"
+    }
 }{
     "resourceType": "Patient",
     "active": "true",
@@ -242,10 +254,16 @@
                 ]
             }
         }
-    ]
+    ],
+    "managingOrganization": {
+        "reference": "Organization/12001",
+        "type": "Organization",
+        "identifier": "NHS",
+        "display": "South Hospital"
+    }
 }{
     "resourceType": "Patient",
-    "active": "true",
+    "active": "false",
     "gender": "female",
     "birthDate": "1990-02-06",
     "deceasedBoolean": "false",
@@ -291,10 +309,16 @@
                 ]
             }
         }
-    ]
+    ],
+    "managingOrganization": {
+        "reference": "Organization/12001",
+        "type": "Organization",
+        "identifier": "NHS",
+        "display": "South Hospital"
+    }
 }{
     "resourceType": "Patient",
-    "active": "true",
+    "active": "false",
     "gender": "male",
     "birthDate": "2000-08-03",
     "deceasedBoolean": "false",
@@ -340,5 +364,11 @@
                 ]
             }
         }
-    ]
+    ],
+    "managingOrganization": {
+        "reference": "Organization/12001",
+        "type": "Organization",
+        "identifier": "NHS",
+        "display": "South Hospital"
+    }
 }

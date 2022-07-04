@@ -282,6 +282,24 @@ while($row = mysqli_fetch_array($query, MYSQLI_ASSOC)){
 
 			}
 
+
+////////////////////////////////////// (7) Reference(Organization) Query //////////////////////////////////////////////////////////	
+
+
+	$sql_7 = "select * from datatype_reference where entity_name = 'patient' and field_name = 'managingOrganization'
+	and entity_id = $patient_id";
+	$query_7 = mysqli_query($db, $sql_7);
+
+	while($row_7 = mysqli_fetch_array($query_7, MYSQLI_ASSOC)){
+																		
+			$response["managingOrganization"]["reference"] = $row_7["reference"];
+			$response["managingOrganization"]["type"] = $row_7["type"];
+			$response["managingOrganization"]["identifier"] = $row_7["identifier"];	
+			$response["managingOrganization"]["display"] = $row_7["display"];					
+	}
+
+
+
 //////////////////////////////////////  Echo All Rows //////////////////////////////////////////////////////////
 
 	
