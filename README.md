@@ -39,10 +39,11 @@ We have lot of interesting things coming up like
 
 Please clone the repo for immediate updates upon releases
 
-# How Does it work?
+# How to test locally?
 <ol> 
   <li> Download and Install WAMP Server from https://www.wampserver.com/en/ </li> 
   <li> Alternatively, You can use any App Servers from the cloud providers such as Azure, AWS, Google Cloud etc </li>
+  <li> Mac users need to download XAMPP </li>
   <li> Create a folder called <b>fhirbyte</b> in www folder and place your <b>php_apis_r4</b>  folder</li> 
   <li> Download Postman Client from https://www.postman.com/  </li> 
   <li> Import <b>FhirByte R4 apis.postman_collection.json</b> into your Postman Client </li> 
@@ -52,6 +53,8 @@ Please clone the repo for immediate updates upon releases
   <li> Open Postman client and test the apis such as <b>Get All Patients, Get Patient by ID etc</b> </li>  
 </ol>  
 
+# How to test online?
+Visit <a href = 'https://fhirbyte.com' target='_blank'> www.fhirbyte.com </a>
 
 # Trademark
 FHIR® is the registered trademark of <a href = 'https://www.hl7.org/' target='_blank'> HL7 </a> and is used with the permission of HL7. Use of the FHIR trademark does not constitute endorsement of this product by HL7.
