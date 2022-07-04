@@ -2,9 +2,11 @@
 <ol>
   <li>  <a href = 'https://fhirbyte.com/' target='_blank'> FHIRByte </a>  is the simplest and fastest application to Develop, Test, Deploy, Scale APIs for any Healthcare Business </li>
   <li> The APIs are built in <a href = 'https://www.hl7.org/fhir/' target='_blank'> FHIR R4</a> JSON Format </li>
+  <li> To test the apis online, visit <a href = 'https://fhirbyte.com' target='_blank'> www.fhirbyte.com </a>   </li>
+  <li> To test the apis locally or in your server, <a href = 'https://github.com/fhirbyte/fhirbyte-r4-apis' target='_blank'> Download/Clone </a> the repo from GitHub </li>
   <li> Supports both Cloud and On-Premisis Hosting </li>
   <li> Works on all top cloud providers such as Azure, AWS, Google Cloud, IBM Cloud etc</li>
-  <li> Supports 4 databases - MYSQL, Oracle, SQL Server and PostGres </li>
+  <li> Supports 4 production databases - MYSQL, Oracle, SQL Server and PostGres </li>
   <li> Supports 100+ languages like <b> English ,中文 ,español, Русский , عربي ,Français etc </b> </li>
   <li> For Business Queries such as Enterprise Licensing, visit <a href = 'https://fhirbyte.com/' target='_blank'> https://www.fhirbyte.com </a> (or) send an email to <b>sales@fhirbyte.com </b></li>
 </ol>
