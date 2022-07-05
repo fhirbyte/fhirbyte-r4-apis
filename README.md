@@ -16,7 +16,7 @@ The Initial release is having following 3 components
 <ol> 
   <li> <b>MySQL:</b> fhirbyte.sql </li> 
   <li> <b>PHP api script:</b>  Folder php_apis_r4 </li> 
-  <li> <b>Postman APIs collection:</b> FhirByte R4 apis.postman_collection.json  </li> 
+  <li> <b>Postman APIs collection:</b> FhirByte R4 apis - github.postman_collection.json  </li> 
 </ol> 
  
 It supports 3 FHIR resources  <br>
@@ -46,7 +46,7 @@ Please clone the repo for immediate updates upon releases
   <li> Mac users need to download XAMPP </li>
   <li> Create a folder called <b>fhirbyte</b> in www folder and place your <b>php_apis_r4</b>  folder</li> 
   <li> Download Postman Client from https://www.postman.com/  </li> 
-  <li> Import <b>FhirByte R4 apis.postman_collection.json</b> into your Postman Client </li> 
+  <li> Import <b>FhirByte R4 apis - github.postman_collection.json</b> into your Postman Client </li> 
   <li> Goto phpMyAdmin in MYSQL and create a database called <b>fhirbyte</b> </li> 
   <li> Import <b>fhirbyte.sql</b> into phpMyAdmin </li>
   <li> Edit connection.php if needed </li>
