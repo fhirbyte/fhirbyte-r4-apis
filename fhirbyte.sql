@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 04, 2022 at 12:54 PM
+-- Generation Time: Jul 05, 2022 at 03:37 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.18
 
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `datatype_address` (
   `updt_user_id` int(11) DEFAULT NULL,
   `updt_cnt` int(11) DEFAULT NULL,
   PRIMARY KEY (`dt_address_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=25003 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=25004 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `datatype_address`
@@ -60,7 +60,8 @@ CREATE TABLE IF NOT EXISTS `datatype_address` (
 INSERT INTO `datatype_address` (`dt_address_id`, `entity_name`, `field_name`, `entity_id`, `active_flag`, `create_dtm`, `create_user_id`, `use`, `type`, `text`, `city`, `district`, `state`, `postalcode`, `country`, `period_start`, `period_end`, `updt_dtm`, `updt_user_id`, `updt_cnt`) VALUES
 (25000, 'patient', 'address', 2000, 1, '2022-06-26 00:00:00', 1000, 'home', 'physical', '1000 Deer Creek Road, Palo Alto', 'San Francisco', 'Santa Clara', 'CA', '94304', 'USA', NULL, NULL, '2022-06-26 00:00:00', 1000, 1),
 (25001, 'patient', 'address', 2001, 1, '2022-06-26 00:00:00', 1000, 'home', 'physical', '1 Letterman C #420 Presidio, Dr Bldg', 'San Francisco', 'Santa Clara', 'CA', '94129', 'USA', NULL, NULL, '2022-06-26 00:00:00', 1000, 1),
-(25002, 'organization_contact', 'address', 35000, 1, '2022-06-26 00:00:00', 1000, 'business', 'physical', '12 Postman C #420 Residio , Doc Bldg', 'San Francisco', 'Santa Clara', 'CA', '32211', 'USA', NULL, NULL, '2022-06-26 00:00:00', 1000, 1);
+(25002, 'organization_contact', 'address', 35000, 1, '2022-06-26 00:00:00', 1000, 'business', 'physical', '12 Postman C #420 Residio , Doc Bldg', 'San Francisco', 'Santa Clara', 'CA', '32211', 'USA', NULL, NULL, '2022-06-26 00:00:00', 1000, 1),
+(25003, 'practitioner', 'address', 40000, 1, '2022-06-26 00:00:00', 1000, 'home', 'physical', '12 Monk Street', 'San Francisco', 'Santa Clara', 'CA', '23211', 'USA', NULL, NULL, '2022-06-26 00:00:00', 1000, 1);
 
 -- --------------------------------------------------------
 
@@ -145,7 +146,7 @@ CREATE TABLE IF NOT EXISTS `datatype_codeableconcept` (
   `updt_user_id` int(11) DEFAULT NULL,
   `updt_cnt` int(11) DEFAULT NULL,
   PRIMARY KEY (`dt_code_concept_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6013 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6016 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `datatype_codeableconcept`
@@ -164,7 +165,10 @@ INSERT INTO `datatype_codeableconcept` (`dt_code_concept_id`, `entity_name`, `fi
 (6009, 'organization', 'type', 12001, 1, NULL, NULL, 97, 'Healthcare Provider', NULL, NULL, NULL),
 (6010, 'organization', 'type', 12002, 1, NULL, NULL, 97, 'Healthcare Provider', NULL, NULL, NULL),
 (6011, 'organization', 'type', 12003, 1, NULL, NULL, 97, 'Healthcare Provider', NULL, NULL, NULL),
-(6012, 'organization', 'type', 12004, 1, NULL, NULL, 82, 'Government', NULL, NULL, NULL);
+(6012, 'organization', 'type', 12004, 1, NULL, NULL, 82, 'Government', NULL, NULL, NULL),
+(6013, 'practitioner', 'communication', 40000, 1, NULL, NULL, 40, 'English (United States)', NULL, NULL, NULL),
+(6014, 'practitioner', 'communication', 40001, 1, NULL, NULL, 40, 'English (United States)', NULL, NULL, NULL),
+(6015, 'practitioner', 'communication', 40002, 1, NULL, NULL, 40, 'English (United States)', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -188,7 +192,7 @@ CREATE TABLE IF NOT EXISTS `datatype_coding` (
   `updt_user_id` int(11) DEFAULT NULL,
   `updt_cnt` int(11) DEFAULT NULL,
   PRIMARY KEY (`dt_coding_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=98 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=159 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `datatype_coding`
@@ -291,7 +295,68 @@ INSERT INTO `datatype_coding` (`dt_coding_id`, `active_flag`, `create_dtm`, `cre
 (94, NULL, NULL, NULL, 'CONTACT_ENTITY_TYPE', 'http://terminology.hl7.org/CodeSystem/contactentity-type', NULL, 'PAYOR', 'Payor', NULL, NULL, NULL, NULL),
 (95, NULL, NULL, NULL, 'CONTACT_ENTITY_TYPE', 'http://terminology.hl7.org/CodeSystem/contactentity-type', NULL, 'PATINF', 'Patient', NULL, NULL, NULL, NULL),
 (96, NULL, NULL, NULL, 'CONTACT_ENTITY_TYPE', 'http://terminology.hl7.org/CodeSystem/contactentity-type', NULL, 'PRESS', 'Press', NULL, NULL, NULL, NULL),
-(97, NULL, NULL, NULL, 'ORGANIZATION_TYPE', 'https://terminology.hl7.org/', NULL, 'prov', 'Healthcare Provider', NULL, NULL, NULL, NULL);
+(97, NULL, NULL, NULL, 'ORGANIZATION_TYPE', 'https://terminology.hl7.org/', NULL, 'prov', 'Healthcare Provider', NULL, NULL, NULL, NULL),
+(98, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'PN', 'Advanced Practice Nurse', NULL, NULL, NULL, NULL),
+(99, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'AAS', 'Associate of Applied Science', NULL, NULL, NULL, NULL),
+(100, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'AA', 'Associate of Arts', NULL, NULL, NULL, NULL),
+(101, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'ABA', 'Associate of Business Administration', NULL, NULL, NULL, NULL),
+(102, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'AE', 'Associate of Engineering', NULL, NULL, NULL, NULL),
+(103, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'AS', 'Associate of Science', NULL, NULL, NULL, NULL),
+(104, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'BA', 'Bachelor of Arts', NULL, NULL, NULL, NULL),
+(105, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'BBA', 'Bachelor of Business Administration', NULL, NULL, NULL, NULL),
+(106, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'BE', 'Bachelor or Engineering', NULL, NULL, NULL, NULL),
+(107, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'BFA', 'Bachelor of Fine Arts', NULL, NULL, NULL, NULL),
+(108, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'BN', 'Bachelor of Nursing', NULL, NULL, NULL, NULL),
+(109, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'BS', 'Bachelor of Science', NULL, NULL, NULL, NULL),
+(110, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'BSL', 'Bachelor of Science - Law', NULL, NULL, NULL, NULL),
+(111, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'BSN', 'Bachelor on Science - Nursing', NULL, NULL, NULL, NULL),
+(112, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'BT', 'Bachelor of Theology', NULL, NULL, NULL, NULL),
+(113, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'CER', 'Certificate', NULL, NULL, NULL, NULL),
+(114, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'CANP', 'Certified Adult Nurse Practitioner', NULL, NULL, NULL, NULL),
+(115, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'CMA', 'Certified Medical Assistant', NULL, NULL, NULL, NULL),
+(116, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'CNP', 'Certified Nurse Practitioner', NULL, NULL, NULL, NULL),
+(117, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'CNM', 'Certified Nurse Midwife', NULL, NULL, NULL, NULL),
+(118, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'CRN', 'Certified Registered Nurse', NULL, NULL, NULL, NULL),
+(119, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'CNS', 'Certified Nurse Specialist', NULL, NULL, NULL, NULL),
+(120, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'CPNP', 'Certified Pediatric Nurse Practitioner', NULL, NULL, NULL, NULL),
+(121, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'CTR', 'Certified Tumor Registrar', NULL, NULL, NULL, NULL),
+(122, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'DIP', 'Diploma', NULL, NULL, NULL, NULL),
+(123, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'DBA', 'Doctor of Business Administration', NULL, NULL, NULL, NULL),
+(124, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'DED', 'Doctor of Education', NULL, NULL, NULL, NULL),
+(125, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'PharmD', 'Doctor of Pharmacy', NULL, NULL, NULL, NULL),
+(126, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'PHE', 'Doctor of Engineering', NULL, NULL, NULL, NULL),
+(127, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'PHD', 'Doctor of Philosophy', NULL, NULL, NULL, NULL),
+(128, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'PHS', 'Doctor of Science', NULL, NULL, NULL, NULL),
+(129, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'MD', 'Doctor of Medicine', NULL, NULL, NULL, NULL),
+(130, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'DO', 'Doctor of Osteopathy', NULL, NULL, NULL, NULL),
+(131, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'EMT', 'Emergency Medical Technician', NULL, NULL, NULL, NULL),
+(132, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'EMTP', 'Emergency Medical Technician - Paramedic', NULL, NULL, NULL, NULL),
+(133, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'FPNP', 'Family Practice Nurse Practitioner', NULL, NULL, NULL, NULL),
+(134, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'HS', 'High School Graduate', NULL, NULL, NULL, NULL),
+(135, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'JD', 'Juris Doctor', NULL, NULL, NULL, NULL),
+(136, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'MA', 'Master of Arts', NULL, NULL, NULL, NULL),
+(137, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'MBA', 'Master of Business Administration', NULL, NULL, NULL, NULL),
+(138, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'MCE', 'Master of Civil Engineering', NULL, NULL, NULL, NULL),
+(139, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'MDI', 'Master of Divinity', NULL, NULL, NULL, NULL),
+(140, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'MED', 'Master of Education', NULL, NULL, NULL, NULL),
+(141, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'MEE', 'Master of Electrical Engineering', NULL, NULL, NULL, NULL),
+(142, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'ME', 'Master of Engineering', NULL, NULL, NULL, NULL),
+(143, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'MFA', 'Master of Fine Arts', NULL, NULL, NULL, NULL),
+(144, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'MME', 'Master of Mechanical Engineering', NULL, NULL, NULL, NULL),
+(145, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'MS', 'Master of Science', NULL, NULL, NULL, NULL),
+(146, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'MSL', 'Master of Science - Law', NULL, NULL, NULL, NULL),
+(147, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'MSN', 'Master of Science - Nursing', NULL, NULL, NULL, NULL),
+(148, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'MTH', 'Master of Theology', NULL, NULL, NULL, NULL),
+(149, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'MDA', 'Medical Assistant', NULL, NULL, NULL, NULL),
+(150, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'MT', 'Medical Technician', NULL, NULL, NULL, NULL),
+(151, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'NG', 'Non-Graduate', NULL, NULL, NULL, NULL),
+(152, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'NP', 'Nurse Practitioner', NULL, NULL, NULL, NULL),
+(153, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'PA', 'Physician Assistant', NULL, NULL, NULL, NULL),
+(154, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'RMA', 'Registered Medical Assistant', NULL, NULL, NULL, NULL),
+(155, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'RN', 'Registered Nurse', NULL, NULL, NULL, NULL),
+(156, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'RPH', 'Registered Pharmacist', NULL, NULL, NULL, NULL),
+(157, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'SEC', 'Secretarial Certificate', NULL, NULL, NULL, NULL),
+(158, NULL, NULL, NULL, 'DEGREE_LICENSE_CERTIFICATE', 'http://terminology.hl7.org/ValueSet/v2-0360', NULL, 'TS', 'Trade School Graduate', NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -318,7 +383,7 @@ CREATE TABLE IF NOT EXISTS `datatype_contactpoint` (
   `updt_user_id` int(11) DEFAULT NULL,
   `updt_cnt` int(11) DEFAULT NULL,
   PRIMARY KEY (`dt_contactpoint_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9006 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=9008 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `datatype_contactpoint`
@@ -330,7 +395,9 @@ INSERT INTO `datatype_contactpoint` (`dt_contactpoint_id`, `entity_name`, `field
 (4002, 'patient', 'telecom', 2001, 1, '2022-06-25 00:00:00', 1000, 'phone', '888-888-8888', 'home', 1, NULL, NULL, '2022-06-25 00:00:00', 1000, 1),
 (4003, 'patient', 'telecom', 2001, 1, '2022-06-25 00:00:00', 1000, 'email', 'peter@gmail.com', 'work', 1, NULL, NULL, '2022-06-25 00:00:00', 1000, 1),
 (4004, 'organization_contact', 'telecom', 2001, 1, '2022-06-25 00:00:00', 1000, 'email', 'south@gmail.com', 'work', 1, NULL, NULL, '2022-06-25 00:00:00', 1000, 1),
-(9005, 'organization_contact', 'telecom', 2001, 1, '2022-06-25 00:00:00', 1000, 'phone', '666-666-666', 'work ', 1, NULL, NULL, '2022-06-25 00:00:00', 1000, 1);
+(9005, 'organization_contact', 'telecom', 2001, 1, '2022-06-25 00:00:00', 1000, 'phone', '666-666-666', 'work ', 1, NULL, NULL, '2022-06-25 00:00:00', 1000, 1),
+(9006, 'practitioner', 'telecom', 40000, 1, '2022-06-25 00:00:00', 1000, 'phone', '222-222-222', 'work ', 1, NULL, NULL, '2022-06-25 00:00:00', 1000, 1),
+(9007, 'practitioner', 'telecom', 40000, 1, '2022-06-25 00:00:00', 1000, 'email', 'richard@gmail.com', 'work ', 1, NULL, NULL, '2022-06-25 00:00:00', 1000, 1);
 
 -- --------------------------------------------------------
 
@@ -356,7 +423,7 @@ CREATE TABLE IF NOT EXISTS `datatype_human_name` (
   `updt_user_id` int(11) DEFAULT NULL,
   `updt_cnt` int(11) DEFAULT NULL,
   PRIMARY KEY (`dt_human_name_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8007 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=8010 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `datatype_human_name`
@@ -369,7 +436,10 @@ INSERT INTO `datatype_human_name` (`dt_human_name_id`, `entity_name`, `field_nam
 (8003, 'patient', 'name', 2000, 1, '2022-06-24 00:00:00', 1000, 'nickname', 'Elon Musk', 'Musk', NULL, NULL, '2022-06-24 00:00:00', 1000, 1),
 (8004, 'patient', 'name', 2002, 1, '2022-06-24 00:00:00', 1000, 'official', 'عبد الفتاح', 'الفتاح', NULL, NULL, '2022-06-24 00:00:00', 1000, 1),
 (8005, 'patient', 'name', 2003, 1, '2022-06-24 00:00:00', 1000, 'official', '马云', '云', NULL, NULL, '2022-06-24 00:00:00', 1000, 1),
-(8006, 'patient', 'name', 2004, 1, '2022-06-24 00:00:00', 1000, 'official', 'Деннис Литтл', 'Литтл', NULL, NULL, '2022-06-24 00:00:00', 1000, 1);
+(8006, 'patient', 'name', 2004, 1, '2022-06-24 00:00:00', 1000, 'official', 'Деннис Литтл', 'Литтл', NULL, NULL, '2022-06-24 00:00:00', 1000, 1),
+(8007, 'practitioner', 'name', 40000, 1, '2022-06-24 00:00:00', 1000, 'official', 'Dr Richard', 'Davis', NULL, NULL, '2022-06-24 00:00:00', 1000, 1),
+(8008, 'practitioner', 'name', 40001, 1, '2022-06-24 00:00:00', 1000, 'official', 'Dr Mary', 'Rose', NULL, NULL, '2022-06-24 00:00:00', 1000, 1),
+(8009, 'practitioner', 'name', 40002, 1, '2022-06-24 00:00:00', 1000, 'official', 'Dr Susan', 'Angelia', NULL, NULL, '2022-06-24 00:00:00', 1000, 1);
 
 -- --------------------------------------------------------
 
@@ -484,7 +554,7 @@ CREATE TABLE IF NOT EXISTS `datatype_identifier` (
   `updt_user_id` int(11) DEFAULT NULL,
   `updt_cnt` int(11) DEFAULT NULL,
   PRIMARY KEY (`dt_identifier_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5005 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5008 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `datatype_identifier`
@@ -494,8 +564,11 @@ INSERT INTO `datatype_identifier` (`dt_identifier_id`, `entity_name`, `field_nam
 (5000, 'patient', 'identifier', 2000, 1, '2022-06-25 00:00:00', 1000, 'official', 'http://mrn.com', 'S001', NULL, NULL, '2022-06-25 00:00:00', 1000, 1),
 (5001, 'patient', 'identifier', 2000, 1, '2022-06-25 00:00:00', 1000, 'official', 'http://mrn.com', 'N001', NULL, NULL, '2022-06-25 00:00:00', 1000, 1),
 (5003, 'organization', 'identifier', 12001, 1, '2022-06-25 00:00:00', 1000, 'official', 'http://org.com', 'NHS', NULL, NULL, '2022-06-25 00:00:00', 1000, 1),
-(5002, 'organization', 'identifier', 12000, 1, '2022-06-25 00:00:00', 1000, 'official', 'http://org.com', 'SHS', NULL, NULL, '2022-06-25 00:00:00', 1000, 1),
-(5004, 'organization', 'identifier', 12002, 1, '2022-06-25 00:00:00', 1000, 'official', 'http://org.com', 'EHS', NULL, NULL, '2022-06-25 00:00:00', 1000, 1);
+(5002, 'organization', 'identifier', 12000, 1, '2022-06-25 00:00:00', 1000, 'official', 'http://organization.com', 'SHS', NULL, NULL, '2022-06-25 00:00:00', 1000, 1),
+(5004, 'organization', 'identifier', 12002, 1, '2022-06-25 00:00:00', 1000, 'official', 'http://organization.com', 'EHS', NULL, NULL, '2022-06-25 00:00:00', 1000, 1),
+(5005, 'practitioner', 'identifier', 40000, 1, '2022-06-25 00:00:00', 1000, 'official', 'http://practitioner.com', 'D0001', NULL, NULL, '2022-06-25 00:00:00', 1000, 1),
+(5006, 'practitioner', 'identifier', 40001, 1, '2022-06-25 00:00:00', 1000, 'official', 'http://practitioner.com', 'D0002', NULL, NULL, '2022-06-25 00:00:00', 1000, 1),
+(5007, 'practitioner', 'identifier', 40002, 1, '2022-06-25 00:00:00', 1000, 'official', 'http://practitioner.com', 'D0003', NULL, NULL, '2022-06-25 00:00:00', 1000, 1);
 
 -- --------------------------------------------------------
 
@@ -744,6 +817,60 @@ CREATE TABLE IF NOT EXISTS `patient_link` (
   `updt_cnt` int(11) DEFAULT NULL,
   PRIMARY KEY (`patient_link_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `practitioner`
+--
+
+DROP TABLE IF EXISTS `practitioner`;
+CREATE TABLE IF NOT EXISTS `practitioner` (
+  `practitioner_id` int(11) NOT NULL AUTO_INCREMENT,
+  `active_flag` int(1) DEFAULT NULL,
+  `create_dtm` datetime DEFAULT NULL,
+  `create_user_id` int(11) DEFAULT NULL,
+  `active` varchar(10) DEFAULT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `birth_date` date DEFAULT NULL,
+  `deceased_boolean` varchar(10) DEFAULT NULL,
+  `deceased_date_time` datetime DEFAULT NULL,
+  `updt_dtm` datetime DEFAULT NULL,
+  `updt_user_id` int(11) DEFAULT NULL,
+  `updt_cnt` int(11) DEFAULT NULL,
+  PRIMARY KEY (`practitioner_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=40003 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `practitioner`
+--
+
+INSERT INTO `practitioner` (`practitioner_id`, `active_flag`, `create_dtm`, `create_user_id`, `active`, `gender`, `birth_date`, `deceased_boolean`, `deceased_date_time`, `updt_dtm`, `updt_user_id`, `updt_cnt`) VALUES
+(40000, 1, '2022-07-05 00:00:00', 1000, 'true', 'male', '1967-02-05', 'false', NULL, '2022-07-05 00:00:00', 1000, 1),
+(40001, 1, '2022-07-05 00:00:00', 1000, 'true', 'female', '1987-09-18', 'false', NULL, '2022-07-05 00:00:00', 1000, 1),
+(40002, 1, '2022-07-05 00:00:00', 1000, 'true', 'female', '1982-09-12', 'false', NULL, '2022-07-05 00:00:00', 1000, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `practitioner_qualification`
+--
+
+DROP TABLE IF EXISTS `practitioner_qualification`;
+CREATE TABLE IF NOT EXISTS `practitioner_qualification` (
+  `practitioner_qualification_id` int(10) NOT NULL AUTO_INCREMENT,
+  `active_flag` int(1) DEFAULT NULL,
+  `create_dtm` datetime DEFAULT NULL,
+  `create_user_id` int(11) DEFAULT NULL,
+  `practitioner_id` int(11) DEFAULT NULL,
+  `code_dt_code_concept_id` int(11) DEFAULT NULL,
+  `period_start` datetime DEFAULT NULL,
+  `period_end` datetime DEFAULT NULL,
+  `updt_dtm` datetime DEFAULT NULL,
+  `updt_user_id` int(11) DEFAULT NULL,
+  `updt_cnt` int(11) DEFAULT NULL,
+  PRIMARY KEY (`practitioner_qualification_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=70000 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
