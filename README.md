@@ -8,7 +8,7 @@
   <li> Works on all top cloud providers such as Azure, AWS, Google Cloud, IBM Cloud etc</li>
   <li> Supports 4 production databases - MYSQL, Oracle, SQL Server and PostGres </li>
   <li> Supports 100+ languages like <b> English ,中文 ,español, Русский , عربي ,Français etc </b> </li>
-  <li> For Business Queries such as Enterprise Licensing, visit <a href = 'https://fhirbyte.com/' target='_blank'> https://www.fhirbyte.com </a> (or) send an email to <b>sales@fhirbyte.com </b></li>
+  <li> For Business Queries such as Enterprise Licensing,  <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSd9-ETaGj3d973L_GatNqRUjaXdha6Wbx1fpyA97tZ9ICq_Zg/viewform' target='_blank'> Fill This Form </a> (or) send an email to <b>sales@fhirbyte.com </b></li>
 </ol>
 
 # Initial Release
@@ -60,4 +60,4 @@ Visit <a href = 'https://www.fhirbyte.com' target='_blank'> https://www.fhirbyte
 FHIR® is the registered trademark of <a href = 'https://www.hl7.org/' target='_blank'> HL7 </a> and is used with the permission of HL7. Use of the FHIR trademark does not constitute endorsement of this product by HL7.
 # Contact Us
 
-For Business Queries such as Enterprise Licensing, please send an email to sales@fhirbyte.com
+For Business Queries such as Enterprise Licensing,  <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSd9-ETaGj3d973L_GatNqRUjaXdha6Wbx1fpyA97tZ9ICq_Zg/viewform' target='_blank'> Fill This Form </a> (or) send an email to <b>sales@fhirbyte.com
