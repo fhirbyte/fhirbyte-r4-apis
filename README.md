@@ -47,7 +47,7 @@ Please clone the repo for immediate updates upon releases
   <li> Mac users need to download XAMPP </li>
   <li> Create a folder called <b>hospini</b> in www folder and place your <b>php_apis_r4</b>  folder</li> 
   <li> Download Postman Client from https://www.postman.com/  </li> 
-  <li> Import <b>Hospini R4 apis - github.postman_collection.json</b> into your Postman Client </li> 
+  <li> Import <b>Hospini FHIR R4 APIS -  Github.postman_collection.json</b> into your Postman Client </li> 
   <li> Goto phpMyAdmin in MYSQL and create a database called <b>hospini</b> </li> 
   <li> Import <b>hospini.sql</b> into phpMyAdmin </li>
   <li> Edit connection.php if needed </li>
