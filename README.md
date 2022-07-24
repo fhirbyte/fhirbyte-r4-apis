@@ -17,7 +17,7 @@ The Initial release is having following 3 components
 <ol> 
   <li> <b>MySQL:</b> hospini.sql </li> 
   <li> <b>PHP api script:</b>  Folder php_apis_r4 </li> 
-  <li> <b>Postman APIs collection:</b> Hospini R4 apis - github.postman_collection.json  </li> 
+  <li> <b>Postman APIs collection:</b> Hospini FHIR R4 APIS -  Github.postman_collection.json  </li> 
 </ol> 
  
 It supports 3 FHIR resources  <br>
