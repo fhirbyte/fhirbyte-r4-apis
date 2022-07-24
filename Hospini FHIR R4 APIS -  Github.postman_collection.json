@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "3100ad10-882b-4aaa-80cf-11b28d7b3f50",
+		"name": "Hospini FHIR R4 APIS -  Github",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Session",
+			"item": [
+				{
+					"name": "Get Session User Details",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "authorization_key",
+									"value": "hcytgplrqi565qcwkutl2jogz",
+									"description": "Security Key",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/session/getSessionUserDetails.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fhirbyte",
+								"php_apis_r4",
+								"session",
+								"getSessionUserDetails.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient",
+			"item": [
+				{
+					"name": "Get All Patients",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "authorization_key",
+									"value": "hcytgplrqi565qcwkutl2jogz",
+									"description": "Security Key",
+									"type": "default"
+								},
+								{
+									"key": "session_user_id",
+									"value": "1000",
+									"description": "Session User ID",
+									"type": "default"
+								},
+								{
+									"key": "active_inactive_filter",
+									"value": "BOTH",
+									"description": "1) BOTH 2)ACTIVE 3) INACTIVE",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/patient/getAllPatients.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fhirbyte",
+								"php_apis_r4",
+								"patient",
+								"getAllPatients.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Organization",
+			"item": [
+				{
+					"name": "Get All Organizations",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "authorization_key",
+									"value": "hcytgplrqi565qcwkutl2jogz",
+									"description": "Security Key",
+									"type": "default"
+								},
+								{
+									"key": "session_user_id",
+									"value": "1000",
+									"description": "Session User ID",
+									"type": "default"
+								},
+								{
+									"key": "active_inactive_filter",
+									"value": "BOTH",
+									"description": "1) BOTH 2)ACTIVE 3) INACTIVE",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/organization/getAllOrganizations.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fhirbyte",
+								"php_apis_r4",
+								"organization",
+								"getAllOrganizations.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Practitioner",
+			"item": [
+				{
+					"name": "Get All Practitioners",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "authorization_key",
+									"value": "hcytgplrqi565qcwkutl2jogz",
+									"description": "Security Key",
+									"type": "default"
+								},
+								{
+									"key": "session_user_id",
+									"value": "1000",
+									"description": "Session User ID",
+									"type": "default"
+								},
+								{
+									"key": "active_inactive_filter",
+									"value": "BOTH",
+									"description": "1) BOTH 2)ACTIVE 3) INACTIVE",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/fhirbyte/php_apis_r4/practitioner/getAllPractitioners.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fhirbyte",
+								"php_apis_r4",
+								"practitioner",
+								"getAllPractitioners.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
